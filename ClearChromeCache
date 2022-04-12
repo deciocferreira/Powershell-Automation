@@ -1,0 +1,5 @@
+#Clear Chrome Cache
+#Create a variable and store the cache path in it.
+
+$gc = "C:\Users\suporte\AppData\Local\Google\Chrome\User Data\Default\Cache\Cache_Data"
+Remove-Item $gc -Recurse -Force -ea SilentlyContinue -Verbose

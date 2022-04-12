@@ -1,5 +1,4 @@
 #Get Firewall rules applied at local computer
 #First we get the information, treat them selecting wath parameters we desire to see, export to a .csv file with encode UTF8 and apply delimiter ";".
 
-
 Get-NetFirewallRule | Select-Object -Property Name, Enabled, Direction, Action | Export-Csv -Path "C:\Users\suporte\Desktop\Decio\FWRule.csv" -Encoding UTF8 -Delimiter ";" -Verbose
